@@ -25,3 +25,11 @@ Un stagiaire peut :
 
 Un moniteur d'activité physique peut :
 - Todo
+
+L'API permet de :
+- S'identifier
+- Afficher les évènements à venir
+- Afficher un évènement
+- Afficher les évènements auquels je suis inscrit(e)
+- S'inscrire à un évènement
+- Se désinscrire d'un évènement
