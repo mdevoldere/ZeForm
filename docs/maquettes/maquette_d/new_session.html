@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle séance &#x1f6b4</title>
+    <meta name="description" content="Formulaire de création d'une nouvelle séance.">
+    <meta name="author" content="Paul BOURGEOIS">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./ressources/logoCouleur.png" alt="LogoCRM">
+        <p>&#127946 ZeForme &#127955</p>
+    </header>
+    <main>
+        <h1>Création d'une nouvelle séance</h1>
+        
+        <form action="#" method="post">
+            <h2>Nouvelle séance</h2>
+            <p>
+                <small>Les champs requis sont marqués par le symbole <strong><abbr title="requis">*</abbr></strong>.</small>
+            </p>
+            <fieldset>
+                <legend>Date et heures</legend>
+                <ul>
+                    <li>
+                        <label for="date">
+                            Date<strong><abbr title="requis">*</abbr></strong> :
+                            <input type="date" name="date-session" id="date" class="moyen">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="début">
+                            Début de la séance<strong><abbr title="requis">*</abbr></strong> :
+                            <input type="time" name="heure-début-session" id="début" value="16:00" class="moyen">
+                        </label>             
+                    </li>
+                    <li>
+                        <label for="fin">
+                            Fin de la séance :
+                            <input type="time" name="heure-fin-session" id="fin" value="17:00" class="moyen">
+                        </label>             
+                    </li>
+                </ul>
+
+                
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Choix de l'activité</legend>
+                <ul>
+                    <li>
+                        <label for="nom">
+                            Nom de l'activité<strong><abbr title="requis">*</abbr></strong> :
+                            <input type="text" name="nom-activité" id="nom" placeholder="Nom nouvelle activité" required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="description">
+                            Description :
+                            <textarea name="desciption-activité" id="description" cols="30" rows="2" required></textarea>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Limites de stagiaires</legend>
+                <ul>
+                    <li>
+                        <label for="minimum">
+                            Nombre minimum d'inscrits<strong><abbr title="requis">*</abbr></strong> :
+                            <input type="number" name="minimum-inscrits" id="minimum" value="0" class="petit">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="maximum">
+                            Nombre maximum d'inscrits<strong><abbr title="requis">*</abbr></strong> :
+                            <input type="number" name="maximum-inscrits" id="minimum" value="15" class="petit">
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            
+            <button type="submit">Valider</button>
+        </form>
+    </main>
+</body>
+</html>
