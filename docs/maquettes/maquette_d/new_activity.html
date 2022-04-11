@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle activité</title>
+    <meta name="description" content="Formulaire de création d'une nouvelle activité.">
+    <meta name="author" content="Paul BOURGEOIS">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./ressources/logoCouleur.png" alt="LogoCRM">
+        <p>&#127946 ZeForme &#127955</p>
+    </header>
+    <main>
+        <h1>&#129470 Création d'une nouvelle activité &#127947</h1>
+        
+        <form action="#" method="post">
+            <h2>Nouvelle activité</h2>
+            <p>
+                <small>Les champs requis sont marqués par le symbole <strong><abbr title="requis">*</abbr></strong>.</small>
+            </p>
+            <ul>
+                <li>
+                    <label for="nom">
+                        Nom de l'activité<strong><abbr title="requis">*</abbr></strong> :
+                        <input type="text" name="nom-activité" id="nom" placeholder="Nom nouvelle activité" required>
+                    </label>
+                </li>
+                <li>
+                    <label for="description">
+                        Description<strong><abbr title="requis">*</abbr></strong> :
+                        <textarea name="desciption-activité" id="description" cols="30" rows="2" required></textarea>
+                    </label>
+                </li>
+            </ul>
+            
+            <button type="submit">Valider</button>
+        </form>
+    </main>
+</body>
+</html>

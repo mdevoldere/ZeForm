@@ -1,0 +1,42 @@
+body{
+    background-color: #1B296A;
+    color: whitesmoke;
+}
+.btn-outline-secondary{
+    color: #F6AF2E;
+    border-color: #1B296A;
+}
+.btn-outline-secondary:hover{
+    background-color: #F6AF2E;
+}
+.btn-outline-primary {
+    color: black;
+    border-color: #1B296A;
+}
+#body_table{
+    color: whitesmoke;
+    border-color: #1B296A;
+}
+.btn-outline-primary:hover {
+    background-color: #7DB9DA;
+    border-color: #1B296A;
+}
+.table{
+    color: whitesmoke;
+}
+.modal-content{
+    background-color: #488287;
+}
+.table tr:hover{
+    color: #ED6840;
+}
+hr{
+    color: #ed6840;
+
+}
+a:hover{
+    color : #ED6840
+}
+a{
+    color: #488287;
+}

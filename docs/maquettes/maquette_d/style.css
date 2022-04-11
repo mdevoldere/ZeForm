@@ -1,0 +1,110 @@
+:root {
+    --bleu-crm: #1B296A;
+    --orange-crm: #ED6840;
+    --rouge-crm: #CF2D4F;
+    --cyan-crm: #7DB9DA;
+    --jaune-crm: #F6AF2E;
+    --vert-crm: #488287;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+header > img {
+    margin-left: 15px;
+    float: left;
+    height: 150px; 
+    flex: 1;
+}
+
+header > p {   
+    flex: 10;
+    text-align: center;
+    font-size: 7em;
+    color: var(--orange-crm);
+}
+
+
+h1 {
+    color: var(--bleu-crm);
+    font-size: 4em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 40%;
+    background-color: var(--bleu-crm);
+    color: white;
+    padding: 1%;
+    border: solid var(--orange-crm) 1px;
+    border-radius: 1em;
+}
+
+form h2 {
+    text-align: center;
+    color: var(--orange-crm);
+    margin: 5px 0;
+}
+
+form > p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+
+form ul {
+    list-style-type: none;
+    margin-bottom: 15px;;
+}
+
+form li + li {
+    margin-top: 25px;;
+}
+
+form label {
+    width: 20%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+form input, form textarea {
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin: 15px auto;
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form fieldset .moyen {
+    float: center;
+    width: 120px;
+    margin-right: 300px;
+}
+
+form fieldset .petit {
+    float: center;
+    width: 50px;
+    margin-right: 350px;
+}
