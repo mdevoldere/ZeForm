@@ -3,6 +3,17 @@ Cahier des charges – ZeForm
 
 Le CRM utilise un formulaire en ligne pour gérer les inscriptions des stagiaires de la formation professionnelle (OFP) aux différentes activités sportives.
 
+# Post-scriptum
+
+- Précision sur certains termes :
+  - Activités : une activité comme le ping pong, le badminton, etc.
+  - Événements : une activité lié à une date (exemple: le mardi de 16h à 17h activité ping pong)
+
+- Il faudra stocker les lieux où se déroulent les activités.  
+  Exemple : le gymnase, la piscine, etc.
+
+- Idée : Donner la possibilité à l'administrateur d'effectuer des actions sur un ensemble de données, à travers des checks-box en HTML
+
 # Fonctionnement actuel 
 
 Actuellement, les inscriptions sont gérées en plusieurs étapes :
@@ -88,3 +99,4 @@ Sachant que la feuille de présence est utilisée pour réaliser les signatures,
 # Idées à trancher
 
 - Gérer l’envoi de mails, notamment en cas d’annulation
+
