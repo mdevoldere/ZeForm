@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    color: #1B296A;
+}
+
+.btn-outline-primary {
+    color: #1B296A;
+    border-color: whitesmoke;
+}
+.btn-outline-primary:hover {
+    background-color: #1B296A;
+    border-color: whitesmoke;
+}
+.table tr:hover{
+    color: #ED6840;
+}
+hr{
+    color: #ed6840;
+
+}
+a:hover{
+    color : #ED6840
+}
