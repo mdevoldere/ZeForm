@@ -5,6 +5,7 @@ Dictionnaire de données - ZeForme
 |---|---|---|---|---|---|
 | activites     | id | Identifiant de l'activité | N | 11 | Identifiant auto incrémenté
 |               | nom | Nom de l'activité (tennis de table, badminton...) | AN | 64 | Obligatoire
+|               |description | description de l'activité | AN | 255 | obligatoire
 |               | nombre_places | Nombre de place maximal pour l'activité | N | 6 | Obligatoire
 |               | horaire_debut | Heure de début (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
 |               | horaire_fin | Heure de fin (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
@@ -25,3 +26,4 @@ Dictionnaire de données - ZeForme
 |               | prenom | Prénom de l'utilisateur | A | 64 | Obligatoire
 |               | departement | Nom de là où est l'utilisateur (section, role dans l'entreprise...) | AN | 32 | Obligatoire
 | roles         | nom | Nom du role (administrateur, moniteur, utilisateur, etc) | A | 16 | Identifiant
+
