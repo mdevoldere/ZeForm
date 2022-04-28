@@ -5,13 +5,13 @@ Dictionnaire de données - ZeForme
 |---|---|---|---|---|---|
 | activites     | id | Identifiant de l'activité | N | 11 | Identifiant auto incrémenté
 |               | nom | Nom de l'activité (tennis de table, badminton...) | AN | 64 | Obligatoire
-|               |description | description de l'activité | AN | 255 | obligatoire
+|               |description | description de l'activité | AN | 255 | Obligatoire
 |               | nombre_places | Nombre de place maximal pour l'activité | N | 6 | Obligatoire
 |               | horaire_debut | Heure de début (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
 |               | horaire_fin | Heure de fin (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
 |               | duree_jours | Nombre de jour de durée de l'activité | N | 3 | Obligatoire, défaut à 1
 |               | frequence | Fréquence de l'activité (unique, quotidien, hebdomadaire, mensuel...) | N | 32 | Obligatoire
-|               | date_début_frequence | Date de début pour la fréquence de l'activité | N | YYYY-MM-DD | Obligatoire, défaut à 1
+|               | date_debut_frequence | Date de début pour la fréquence de l'activité | N | YYYY-MM-DD | Obligatoire, défaut à 1
 | evenements    | id | Identifiant de l'événement | N | 11 | Identifiant auto incrémenté 
 |               | date_debut | Date de début de l'événement | D | YYYY-MM-DD | Obligatoire
 |               | date_fin | Date de fin de l'événement | D | YYYY-MM-DD | Obligatoire
