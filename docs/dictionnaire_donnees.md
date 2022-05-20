@@ -1,4 +1,4 @@
-Dictionnaire de données - ZeForme
+ZeForm - Dictionnaire de données
 ===================
 
 | Entité | Mnémonique | Sens | Type | Taille | Remarques
@@ -27,3 +27,40 @@ Dictionnaire de données - ZeForme
 |               | departement | Nom de là où est l'utilisateur (section, role dans l'entreprise...) | AN | 32 | Obligatoire
 | roles         | nom | Nom du role (administrateur, moniteur, utilisateur, etc) | A | 16 | Identifiant
 
+| Entité | Mnémonique | Sens | Type | Taille | Remarques
+|---|---|---|---|---|---
+| personne  | personne_id       | Identifiant du stagiaire  | N | |
+| personne  | personne_nom      | Nom du stagiaire          | A | |
+| personne  | personne_prenom   | Prénom du stagiaire       | A | |
+| personne  | personne_section  | Section du stagiaire (cda 2111, abc dev, etc...) | AN | |
+| personne  | personne_etat     | Status d'une personne : présent, absent, etc | A ||
+| activite  | activite_id                       | Identifiant d'une activité    | N | |
+| activite  | activite_recurrence_time_debut    | Heure de début de l'activité  | T | |
+| activite  | activite_recurrence_time_fin      | Heure de fin de l'activité    | T | |
+| activite  | activite_recurrence_date          | Date de début de l'activité (jour de la semaine, numéro du jour du mois, etc) | AN | |
+| activite  | activite_recurrence_type          | Type de récurrence (tous les jours, toutes les semaines, tous les mois...) | A | |
+| activite  | activité_date_fin                 | Date de fin de l'activité | D | | Optionnelle
+| activite  | activite_nombre_max_place         | Nombre maximal de place autorisé | N | |
+| activite  | activite_nombre_min_place         | Nombre minimal de place autorisé | N | |
+| activite  | activite_jours_avant_ouverture    | Nombre de jours avant l'ouverture des inscriptions | N | |
+| evenement | evenement_id                      | Identifiant de l'événement | N | |
+| evenement | evenement_nom                     | Nom de l'événement | AN | |
+| evenement | evenement_etat_inscription        | Etat de l'inscription de l'événement : ouvert, fermé | A | |
+| evenement | evenement_jours_avant_ouverture   | Nombre de jours avant l'ouverture des inscriptions | N | |
+| evenement | evenement_place_max               | Nombre maximal de places | N | |
+| evenement | evenement_place_min               | Nombre minimal de places | N | |
+| evenement | evenement_datetime_debut          | Date et heure de l'événement | DT | |
+| evenement | evenement_datetime_fin            | Date et heure de l'événement | DT | |
+| evenement | evenement_presence_genere         | Est ce que la feuille de présence a été généré ? | B | |
+| etat      | etat_id     | Identifiant d'un état                                         |
+| etat      | etat_nom    | Nom de l'état (inscription ouverte ou fermé, annulé, etc.)    | A | |
+| lieu      | lieu_id   | Identifiant du lieu           | N | |
+| lieu      | lieu_nom  | Nom du lieu                   | A(N) | |
+| role      | role_id   | Identifiant du role           | N | |
+| role      | role_nom  | Nom du role : administrateur, moniteur, stagiaire, etc. | N | |
+|           | personne_evenement_inscription
+|           | personne_evenement_inscription_status
+
+
+Entité section ?
+Comment gérer plusieurs types de récurrences (tous les jours, toutes les semaines, tous les mois, toutes les 2 semaines, tous les ans...)
