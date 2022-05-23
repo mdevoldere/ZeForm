@@ -26,7 +26,7 @@ ZeForm - Régles de gestion
     - un état défini 0 ou plusieurs activités.
 
 - **lieu et activité**
-    - une activité est généralement situé dans un lieu.
+    - une activité est situé dans 0 ou un lieu.
     - un lieu situe 0 ou plusieurs activités.
 
 - **lieu et événement**
