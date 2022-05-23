@@ -1,66 +1,40 @@
 ZeForm - Dictionnaire de données
 ===================
 
-| Entité | Mnémonique | Sens | Type | Taille | Remarques
-|---|---|---|---|---|---|
-| activites     | id | Identifiant de l'activité | N | 11 | Identifiant auto incrémenté
-|               | nom | Nom de l'activité (tennis de table, badminton...) | AN | 64 | Obligatoire
-|               |description | description de l'activité | AN | 255 | Obligatoire
-|               | nombre_places | Nombre de place maximal pour l'activité | N | 6 | Obligatoire
-|               | horaire_debut | Heure de début (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
-|               | horaire_fin | Heure de fin (cyclique) de l'activité | T | hh:mm:ss | Obligatoire
-|               | duree_jours | Nombre de jour de durée de l'activité | N | 3 | Obligatoire, défaut à 1
-|               | frequence | Fréquence de l'activité (unique, quotidien, hebdomadaire, mensuel...) | N | 32 | Obligatoire
-|               | date_debut_frequence | Date de début pour la fréquence de l'activité | N | YYYY-MM-DD | Obligatoire, défaut à 1
-| evenements    | id | Identifiant de l'événement | N | 11 | Identifiant auto incrémenté 
-|               | date_debut | Date de début de l'événement | D | YYYY-MM-DD | Obligatoire
-|               | date_fin | Date de fin de l'événement | D | YYYY-MM-DD | Obligatoire
-|               | horaire_début | Heure de début de l'événement | T | hh:mm:ss | Obligatoire
-|               | horaire_fin | Heure de fin de l'événement | T | hh:mm:ss | Obligatoire
-|               | nombre_places | Nombre de place maximal pour l'événement | N | 6 | Obligatoire
-|               | status | Status de l'événement : Activé, désactivé...  | AN | 32 | Obligatoire
-|               | status_inscription | Est ce que les inscriptions sont ouvertes  | Boolean | 1 | Obligatoire
-| lieux         | nom | Nom du lieu | A | 32 | Identifiant
-| utilisateurs  | id | Identifiant de l'utilisateur | A | 11 | Identifiant auto incrémenté
-|               | nom | Nom de l'utilisateur | A | 64 | Obligatoire
-|               | prenom | Prénom de l'utilisateur | A | 64 | Obligatoire
-|               | departement | Nom de là où est l'utilisateur (section, role dans l'entreprise...) | AN | 32 | Obligatoire
-| roles         | nom | Nom du role (administrateur, moniteur, utilisateur, etc) | A | 16 | Identifiant
+# Tableau
 
 | Entité | Mnémonique | Sens | Type | Taille | Remarques
 |---|---|---|---|---|---
-| personne  | personne_id       | Identifiant du stagiaire  | N | |
-| personne  | personne_nom      | Nom du stagiaire          | A | |
-| personne  | personne_prenom   | Prénom du stagiaire       | A | |
-| personne  | personne_section  | Section du stagiaire (cda 2111, abc dev, etc...) | AN | |
-| personne  | personne_etat     | Status d'une personne : présent, absent, etc | A ||
-| activite  | activite_id                       | Identifiant d'une activité    | N | |
-| activite  | activite_recurrence_time_debut    | Heure de début de l'activité  | T | |
-| activite  | activite_recurrence_time_fin      | Heure de fin de l'activité    | T | |
-| activite  | activite_recurrence_date          | Date de début de l'activité (jour de la semaine, numéro du jour du mois, etc) | AN | |
-| activite  | activite_recurrence_type          | Type de récurrence (tous les jours, toutes les semaines, tous les mois...) | A | |
-| activite  | activité_date_fin                 | Date de fin de l'activité | D | | Optionnelle
-| activite  | activite_nombre_max_place         | Nombre maximal de place autorisé | N | |
-| activite  | activite_nombre_min_place         | Nombre minimal de place autorisé | N | |
-| activite  | activite_jours_avant_ouverture    | Nombre de jours avant l'ouverture des inscriptions | N | |
-| evenement | evenement_id                      | Identifiant de l'événement | N | |
-| evenement | evenement_nom                     | Nom de l'événement | AN | |
-| evenement | evenement_etat_inscription        | Etat de l'inscription de l'événement : ouvert, fermé | A | |
-| evenement | evenement_jours_avant_ouverture   | Nombre de jours avant l'ouverture des inscriptions | N | |
-| evenement | evenement_place_max               | Nombre maximal de places | N | |
-| evenement | evenement_place_min               | Nombre minimal de places | N | |
-| evenement | evenement_datetime_debut          | Date et heure de l'événement | DT | |
-| evenement | evenement_datetime_fin            | Date et heure de l'événement | DT | |
-| evenement | evenement_presence_genere         | Est ce que la feuille de présence a été généré ? | B | |
-| etat      | etat_id     | Identifiant d'un état                                         |
-| etat      | etat_nom    | Nom de l'état (inscription ouverte ou fermé, annulé, etc.)    | A | |
-| lieu      | lieu_id   | Identifiant du lieu           | N | |
-| lieu      | lieu_nom  | Nom du lieu                   | A(N) | |
-| role      | role_id   | Identifiant du role           | N | |
-| role      | role_nom  | Nom du role : administrateur, moniteur, stagiaire, etc. | N | |
-|           | personne_evenement_inscription
-|           | personne_evenement_inscription_status
+| personne  | personne_id           | Identifiant de la personne  | N | 11 | Identifiant auto incrémenté
+| personne  | personne_nom          | Nom de la personne          | A | 64 | Obligatoire
+| personne  | personne_prenom       | Prénom de la personne       | A | 64 | Obligatoire
+| personne  | personne_departement  | Nom du role dans l'entreprise de la personne (nom de section, nom dans l'entreprise...) | AN | 32 | Obligatoire
+| activite  | activite_id                       | Identifiant d'une activité    | N | 11 | Identifiant auto incrémenté
+| activite  | activite_nom                      | Nom de l'activité (tennis de table, badminton...)    | N | 64 | Obligatoire
+| activite  | activite_frequence_heure_debut    | Heure "classique" du début de l'activité, de manière réccurente, qui servira à la génération automatique | T | hh:mm:ss | Obligatoire
+| activite  | activite_frequence_heure_fin      | Heure "classique" de la fin de l'activité, de manière réccurente, qui servira à la génération automatique  | T | hh:mm:ss | Obligatoire
+| activite  | activite_frequence_date       | Date de début de l'activité (jour de la semaine, numéro du jour du mois, etc) | AN | 64 | Obligatoire
+| activite  | activite_frequence_type       | Fréquence de l'activité (unique, quotidien, hebdomadaire, mensuel...) | A | 32 | Obligatoire
+| activite  | activité_date_début           | Date de début de l'activité | D | YYYY-MM-DD | Obligatoire
+| activite  | activité_date_fin             | Date de fin de l'activité | D | YYYY-MM-DD | Optionnelle
+| activite  | activite_place_max            | Nombre maximal de place autorisée | N | 6 | Obligatoire
+| activite  | activite_place_min            | Nombre minimal de place autorisée | N | 6 | Obligatoire, défaut à 0
+| activite  | activite_jours_inscriptions   | Nombre de jours avant l'ouverture des inscriptions pour les événements | N | 6 | Obligatoire, defaut à 0 (correspond à aucune attente)
+| evenement | evenement_id                  | Identifiant de l'événement | N | 11 | Identifiant auto incrémenté
+| evenement | evenement_nom                 | Nom de l'événement | AN | 64 | Obligatoire
+| evenement | evenement_jours_inscriptions  | Nombre de jours avant l'ouverture des inscriptions | N | 6 | Obligatoire, defaut à 0 (correspond à aucune attente)
+| evenement | evenement_place_max           | Nombre maximal de places | N | 6 | Obligatoire
+| evenement | evenement_place_min           | Nombre minimal de places | N | 6 | Obligatoire, défaut à 0
+| evenement | evenement_horaire_debut       | Date et heure de début de l'événement | DT | YYYY-MM-DD hh:mm:ss | Obligatoire, défaut à la date d'aujourd'hui
+| evenement | evenement_horaire_fin         | Date et heure de fin de l'événement | DT | YYYY-MM-DD hh:mm:ss | Obligatoire
+| etat      | etat_id     | Identifiant d'un état                                         | N | 11 | Identifiant auto incrémenté
+| etat      | etat_nom    | Nom de l'état (inscription ouverte ou fermé, annulé, etc.)    | A | 32 | Obligatoire, unique
+| lieu      | lieu_id     | Identifiant du lieu           | N | 11 | Identifiant auto incrémenté
+| lieu      | lieu_nom    | Nom du lieu                   | A(N) | 32 | Obligatoire, unique
+| role      | role_id     | Identifiant du role           | N | 11 | Identifiant auto incrémenté
+| role      | role_nom    | Nom du role (administrateur, moniteur, stagiaire, etc.) | A | 16 | Obligatoire, unique
 
 
-Entité section ?
-Comment gérer plusieurs types de récurrences (tous les jours, toutes les semaines, tous les mois, toutes les 2 semaines, tous les ans...)
+# Reflexions
+- Devons nous créer une entité "section" ?
+- Comment devons nous gérer les types de récurrences (tous les jours, toutes les semaines, tous les mois, toutes les 2 semaines, tous les ans...) .
